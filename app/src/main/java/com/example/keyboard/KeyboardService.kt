@@ -25,12 +25,14 @@ class KeyboardService : InputMethodService() {
         }
 
         rows.forEachIndexed { index, row ->
-            if (index == 1) root.addView(makeRow(listOf("⇧") + row.map { it.toString() } + listOf("⌫")))
-            else if (index == 3) root.addView(makeRow(listOf("🌐") + row.map { it.toString() } + listOf("↵")))
-            else root.addView(makeRow(row.map { it.toString() }))
+            when (index) {
+                1 -> root.addView(makeRow(listOf("⇧") + row.map { it.toString() } + listOf("⌫")))
+                3 -> root.addView(makeRow(listOf("🌐") + row.map { it.toString() } + listOf("↵")))
+                else -> root.addView(makeRow(row.map { it.toString() }))
+            }
         }
 
-        root.addView(makeRow(listOf(" " )).apply { addView(makeSpaceKey()) })
+        root.addView(makeRow(listOf(" ")))
 
         return root
     }
@@ -51,18 +53,6 @@ class KeyboardService : InputMethodService() {
             textSize = 18f
             setPadding(0, 16, 0, 16)
             setOnClickListener { onKeyPressed(label) }
-        }
-    }
-
-    private fun makeSpaceKey(): Button {
-        return Button(this).apply {
-            text = "Space"
-            textSize = 18f
-            setPadding(0, 16, 0, 16)
-            setOnClickListener {
-                val ic = currentInputConnection ?: return@setOnClickListener
-                ic.commitText(" ", 1)
-            }
         }
     }
 
