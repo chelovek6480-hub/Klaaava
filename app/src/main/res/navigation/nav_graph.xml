@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.keyboard.HomeFragment" />
+    <fragment
+        android:id="@+id/nav_keyboard"
+        android:name="com.example.keyboard.KeyboardFragment" />
+    <fragment
+        android:id="@+id/nav_dictionary"
+        android:name="com.example.keyboard.DictionaryFragment" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.keyboard.ProfileFragment" />
+    <fragment
+        android:id="@+id/nav_rules"
+        android:name="com.example.keyboard.RulesFragment" />
+    <fragment
+        android:id="@+id/nav_stats"
+        android:name="com.example.keyboard.StatsFragment" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.keyboard.SettingsFragment" />
+
+</navigation>
