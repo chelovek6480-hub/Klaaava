@@ -141,6 +141,7 @@
 
         <!-- Quick cards grid 2x2 -->
         <LinearLayout
+            android:id="@+id/cardDictionary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -158,7 +159,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Словарь"
+                    android:text="@string/home_dictionary"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -167,7 +168,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="1268 слов"
+                    android:text="@string/home_dictionary_sub"
                     android:textColor="@color/text_secondary"
                     android:textSize="13sp" />
             </LinearLayout>
@@ -184,7 +185,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Правила"
+                    android:text="@string/home_rules"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -193,13 +194,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Муринские законы"
+                    android:text="@string/home_rules_sub"
                     android:textColor="@color/text_secondary"
                     android:textSize="13sp" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/cardStats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -217,7 +219,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Статистика"
+                    android:text="@string/home_stats"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -226,12 +228,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Твоя активность"
+                    android:text="@string/home_stats_sub"
                     android:textColor="@color/text_secondary"
                     android:textSize="13sp" />
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/cardSettings"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -243,7 +246,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Настройки"
+                    android:text="@string/home_settings"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -252,7 +255,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Персонализация"
+                    android:text="@string/home_settings_sub"
                     android:textColor="@color/text_secondary"
                     android:textSize="13sp" />
             </LinearLayout>
