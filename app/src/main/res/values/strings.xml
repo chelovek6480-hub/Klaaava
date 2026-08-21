@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Keyboard</string>
+    <string name="app_name">Klaaava</string>
+    <string name="subtitle">Умная клавиатура</string>
+    <string name="btn_enable">Включить клавиатуру</string>
+    <string name="btn_pick">Как выбрать клавиатуру?</string>
+    <string name="tip">Открой Настройки → Система → Язык и ввод → Клавиатуры → включи Klaaava. Затем в поле ввода нажми 🎛️ и выбери Klaaava.</string>
 </resources>
