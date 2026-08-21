@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Klaaava" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.Murinsky" parent="Theme.MaterialComponents.NoActionBar">
         <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryVariant">@color/primary_green_bright</item>
         <item name="colorOnPrimary">#FFFFFF</item>
         <item name="android:windowBackground">@color/bg_dark</item>
         <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>
