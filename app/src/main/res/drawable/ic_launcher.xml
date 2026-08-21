@@ -4,25 +4,27 @@
     android:height="48dp"
     android:viewportWidth="48"
     android:viewportHeight="48">
+
+    <!-- Green background -->
     <path
-        android:fillColor="#FF3D5AFE"
-        android:pathData="M0,0h48v48h-48z" />
+        android:fillColor="#122417"
+        android:pathData="M0,0 h48 v48 h-48 Z" />
+
+    <!-- Face outline -->
     <path
-        android:fillColor="#FFFFFFFF"
-        android:pathData="M6,14 L42,14 L42,36 L6,36 Z" />
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,10 C15,10 10,21 10,32 C10,44 16,40 24,40 C32,40 38,44 38,32 C38,21 33,10 24,10 Z" />
+
+    <!-- Eyes -->
     <path
-        android:fillColor="#FF3D5AFE"
-        android:pathData="M10,26 L24,26 L24,30 L10,30 Z" />
+        android:fillColor="#000000"
+        android:pathData="M15,22 A3,3 0 1,1 21,22 A3,3 0 1,1 15,22 Z" />
     <path
-        android:fillColor="#FF3D5AFE"
-        android:pathData="M10,20 L18,20 L18,24 L10,24 Z" />
+        android:fillColor="#000000"
+        android:pathData="M27,22 A3,3 0 1,1 33,22 A3,3 0 1,1 27,22 Z" />
+
+    <!-- Nose / mouth triangle -->
     <path
-        android:fillColor="#FF3D5AFE"
-        android:pathData="M20,20 L30,20 L30,24 L20,24 Z" />
-    <path
-        android:fillColor="#FF3D5AFE"
-        android:pathData="M31,20 L38,20 L38,24 L31,24 Z" />
-    <path
-        android:fillColor="#FF3D5AFE"
-        android:pathData="M26,26 L38,26 L38,30 L26,30 Z" />
+        android:fillColor="#000000"
+        android:pathData="M18,32 L30,32 L24,37 Z" />
 </vector>
