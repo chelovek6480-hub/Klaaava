@@ -4,63 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="32dp"
-    android:background="#F5F5F7">
+    android:background="@color/bg_dark">
 
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:text="⌨️"
-        android:textSize="72sp"
-        android:gravity="center"
-        android:background="@drawable/icon_bg"
-        android:layout_gravity="center" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Klaaava"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:textColor="#1C1C1E"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/subtitle"
-        android:textSize="16sp"
-        android:textColor="#8E8E93"
-        android:layout_marginTop="8dp"
-        android:layout_gravity="center" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="48dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnEnable"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="@string/btn_enable"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:cornerRadius="16dp"
-        app:backgroundTint="#007AFF"
-        android:layout_marginBottom="16dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnPick"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="@string/btn_pick"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#007AFF"
-        app:cornerRadius="16dp"
-        app:backgroundTint="#E5F1FF"
-        app:elevation="0dp" />
+        android:background="@color/card_dark"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
 
 </LinearLayout>
