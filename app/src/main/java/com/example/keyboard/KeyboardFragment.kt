@@ -24,7 +24,7 @@ class KeyboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.btnEnable).setOnClickListener {
-            startActivity(Intent(Settings.ACTION_INPUT_METHOD_SETTINGS))
+            requireContext().startActivity(Intent(Settings.ACTION_INPUT_METHOD_SETTINGS))
         }
 
         view.findViewById<Button>(R.id.btnPick).setOnClickListener {
