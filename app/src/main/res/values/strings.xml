@@ -72,7 +72,7 @@
     <string name="stats_added">Добавлено новых слов</string>
     <string name="stats_added_value">12</string>
     <string name="stats_accuracy">Точность исправлений</string>
-    <string name="stats_accuracy_value">96%</string>
+    <string name="stats_accuracy_value" formatted="false">96%</string>
     <string name="stats_top">Самое частое слово</string>
     <string name="stats_top_value">КОДОВОСТЬ</string>
 
