@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
     <application
-        android:label="@string/app_name"
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:allowBackup="true">
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Klaaava">
+        android:label="Klaaava"
+        android:theme="@style/Theme.Klaaava">
+        
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -18,9 +15,8 @@
 
         <service
             android:name=".KeyboardService"
-            android:label="Klaaava Keyboard"
-            android:permission="android.permission.BIND_INPUT_METHOD"
-            android:exported="true">
+            android:exported="true"
+            android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
             </intent-filter>
@@ -28,7 +24,5 @@
                 android:name="android.view.im"
                 android:resource="@xml/method" />
         </service>
-
     </application>
-
 </manifest>
