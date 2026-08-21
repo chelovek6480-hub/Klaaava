@@ -1,23 +1,21 @@
 package com.example.keyboard
 
-import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
-import android.provider.Settings
-import android.widget.Button
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button>(R.id.btnEnable).setOnClickListener {
-            startActivity(Intent(Settings.ACTION_INPUT_METHOD_SETTINGS))
-        }
+        val navHost = supportFragmentManager
+            .findFragmentById(R.id.navHostFragment) as NavHostFragment
+        val navController = navHost.navController
 
-        findViewById<Button>(R.id.btnPick).setOnClickListener {
-            Toast.makeText(this, getString(R.string.tip), Toast.LENGTH_LONG).show()
-        }
+        findViewById<BottomNavigationView>(R.id.bottomNav)
+            .setupWithNavController(navController)
     }
 }
