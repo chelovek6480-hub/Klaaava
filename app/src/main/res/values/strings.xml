@@ -1,8 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Klaaava</string>
-    <string name="subtitle">Умная клавиатура</string>
+    <string name="app_name">Муринский</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">Муринский</string>
+    <string name="welcome_subtitle">клавиатура и словарь</string>
+    <string name="feature_t9_title">Муринский T9</string>
+    <string name="feature_t9_desc">Умный ввод по цифрам с муринским словарём</string>
+    <string name="feature_auto_title">Автокоррекция</string>
+    <string name="feature_auto_desc">Исправляет ошибки, подбирает суффиксы и склоняет</string>
+    <string name="feature_live_title">Живой словарь</string>
+    <string name="feature_live_desc">Словарь учится вместе с тобой и растёт каждый день</string>
+    <string name="feature_limit_title">Без ограничений</string>
+    <string name="feature_limit_desc">В Мурино нет «нельзя». Только даость и возможность</string>
+
+    <!-- Home -->
+    <string name="home_mode_label">Режим Мурино</string>
+    <string name="home_input_hint">Введи текст</string>
+    <string name="home_result_label">Муринский перевод</string>
+    <string name="home_apply">Применить</string>
+    <string name="home_dictionary">Словарь</string>
+    <string name="home_dictionary_sub">1268 слов</string>
+    <string name="home_rules">Правила</string>
+    <string name="home_rules_sub">Муринские законы</string>
+    <string name="home_stats">Статистика</string>
+    <string name="home_stats_sub">Твоя активность</string>
+    <string name="home_settings">Настройки</string>
+    <string name="home_settings_sub">Персонализация</string>
+
+    <!-- Nav -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_keyboard">Клавиатура</string>
+    <string name="nav_dictionary">Словарь</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Keyboard fragment -->
     <string name="btn_enable">Включить клавиатуру</string>
     <string name="btn_pick">Как выбрать клавиатуру?</string>
     <string name="tip">Открой Настройки → Система → Язык и ввод → Клавиатуры → включи Klaaava. Затем в поле ввода нажми 🎛️ и выбери Klaaava.</string>
+
+    <!-- Dictionary -->
+    <string name="dictionary_title">Словарь</string>
+    <string name="tab_all">Все слова</string>
+    <string name="tab_mine">Мои слова</string>
+    <string name="tab_exceptions">Исключения</string>
+    <string name="add_word">Добавить слово</string>
+
+    <!-- Rules -->
+    <string name="rules_title">Правила Мурино</string>
+    <string name="rules_subtitle">Все слова оканчиваются на строго определённые суффиксы.</string>
+    <string name="rules_suffix_header">Суффиксы</string>
+    <string name="rule_ost_title">-ОСТЬ</string>
+    <string name="rule_ost_desc">Базовый, универсальный (кодовость, бабность, мамность)</string>
+    <string name="rule_nost_title">-НОСТЬ</string>
+    <string name="rule_nost_desc">Для абстрактных понятий (язьность, галлюцинационность, отказность)</string>
+    <string name="rule_stvost_title">-СТВОСТЬ</string>
+    <string name="rule_stvost_desc">Для состояний и групп (друннствость, программистость)</string>
+    <string name="rules_exceptions_header">Исключения</string>
+    <string name="rules_exceptions_desc">Священные имена. Не склоняются и не изменяются.</string>
+    <string name="exception_ch">Ч</string>
+    <string name="exception_batch">Батч</string>
+    <string name="exception_drunn">Друнн</string>
+
+    <!-- Stats -->
+    <string name="stats_title">Статистика</string>
+    <string name="stats_period">За всё время</string>
+    <string name="stats_words">Слов в словаре</string>
+    <string name="stats_words_value">1248</string>
+    <string name="stats_fixed">Исправлено слов сегодня</string>
+    <string name="stats_fixed_value">37</string>
+    <string name="stats_added">Добавлено новых слов</string>
+    <string name="stats_added_value">12</string>
+    <string name="stats_accuracy">Точность исправлений</string>
+    <string name="stats_accuracy_value">96%</string>
+    <string name="stats_top">Самое частое слово</string>
+    <string name="stats_top_value">КОДОВОСТЬ</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Профиль</string>
+    <string name="profile_name">Муринский</string>
+    <string name="profile_sub">Легенда клавиатуры</string>
+    <string name="profile_settings">Настройки</string>
+    <string name="profile_about">О приложении</string>
+    <string name="profile_version">Версия 1.0</string>
 </resources>
