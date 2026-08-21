@@ -1,14 +1,15 @@
 package com.example.keyboard
 
+import android.graphics.Color
+import android.graphics.Typeface
 import android.inputmethodservice.InputMethodService
 import android.text.TextUtils
+import android.util.TypedValue
+import android.view.Gravity
 import android.view.KeyEvent
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
-import android.graphics.Color
-import android.util.TypedValue
-import android.view.Gravity
 
 class KeyboardService : InputMethodService() {
 
@@ -24,8 +25,8 @@ class KeyboardService : InputMethodService() {
     override fun onCreateInputView(): View {
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setBackgroundColor(Color.parseColor("#D1D5DB")) // Светло-серый фон клавиатуры
-            setPadding(0, dpToPx(8), 0, dpToPx(8))
+            setBackgroundColor(Color.parseColor("#16161A"))
+            setPadding(0, dpToPx(6), 0, dpToPx(6))
         }
 
         rows.forEachIndexed { index, row ->
@@ -49,7 +50,7 @@ class KeyboardService : InputMethodService() {
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
             ).apply {
-                setMargins(0, dpToPx(4), 0, dpToPx(4))
+                setMargins(0, dpToPx(3), 0, dpToPx(3))
             }
         }
         keys.forEach { key ->
@@ -61,22 +62,28 @@ class KeyboardService : InputMethodService() {
     private fun makeKey(label: String): Button {
         val isSpecial = label in listOf("⇧", "⌫", "🌐", "↵")
         val isSpace = label == " "
-        
+
         return Button(this).apply {
             text = if (label.length == 1 && label[0].isLowerCase() && capsLock) label.uppercase() else label
-            textSize = 20f
+            textSize = 18f
             isAllCaps = false
-            setTextColor(Color.parseColor(if (isSpecial) "#FFFFFF" else "#000000"))
-            
-            setBackgroundResource(if (isSpecial) R.drawable.key_bg_special else R.drawable.key_bg)
-            
-            val weight = if (isSpace) 1f else 0f
-            val width = if (isSpace) 0 else if (isSpecial) dpToPx(48) else dpToPx(36)
-            
-            layoutParams = LinearLayout.LayoutParams(width, dpToPx(54), weight).apply {
-                setMargins(dpToPx(3), 0, dpToPx(3), 0)
+            setTypeface(typeface, Typeface.BOLD)
+
+            if (isSpecial) {
+                setTextColor(Color.parseColor("#7CFC5A"))
+                setBackgroundColor(Color.parseColor("#2C2C35"))
+            } else {
+                setTextColor(Color.parseColor("#FFFFFF"))
+                setBackgroundColor(Color.parseColor("#2E2E34"))
             }
-            
+
+            val weight = if (isSpace) 1f else 0f
+            val width = if (isSpace) 0 else if (isSpecial) dpToPx(46) else dpToPx(36)
+
+            layoutParams = LinearLayout.LayoutParams(width, dpToPx(50), weight).apply {
+                setMargins(dpToPx(2), 0, dpToPx(2), 0)
+            }
+
             setPadding(0, 0, 0, 0)
             setOnClickListener { onKeyPressed(label) }
         }
