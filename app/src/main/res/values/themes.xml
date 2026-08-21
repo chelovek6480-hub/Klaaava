@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Klaaava" parent="Theme.AppCompat.DayNight.DarkActionBar">
-        <item name="android:windowBackground">#FFFFFF</item>
+    <style name="Theme.Klaaava" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
 </resources>
