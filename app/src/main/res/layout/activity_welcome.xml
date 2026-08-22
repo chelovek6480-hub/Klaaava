@@ -10,22 +10,24 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:padding="24dp">
+        android:paddingHorizontal="28dp"
+        android:paddingBottom="24dp">
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="56dp"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="48dp"
             android:src="@drawable/ic_keyboard"
-            android:background="@drawable/bg_icon_green"
-            android:padding="28dp"
+            android:background="@drawable/bg_logo_green"
+            android:scaleType="centerInside"
+            android:padding="30dp"
             android:contentDescription="@string/app_name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="22dp"
             android:text="@string/welcome_title"
             android:textColor="@color/text_primary"
             android:textSize="34sp"
@@ -34,37 +36,37 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="6dp"
             android:text="@string/welcome_subtitle"
-            android:textColor="@color/text_secondary"
-            android:textSize="16sp" />
+            android:textColor="@color/text_muted"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="36dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:padding="16dp"
-                android:background="@drawable/bg_feature_item">
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
                     android:src="@drawable/ic_keyboard"
-                    android:background="@drawable/bg_icon_green"
-                    android:padding="8dp" />
+                    android:background="@drawable/bg_icon_tile"
+                    android:scaleType="centerInside"
+                    android:padding="14dp"
+                    android:contentDescription="@string/feature_t9_title" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="18dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -72,40 +74,41 @@
                         android:layout_height="wrap_content"
                         android:text="@string/feature_t9_title"
                         android:textColor="@color/text_primary"
-                        android:textSize="16sp"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="3dp"
                         android:text="@string/feature_t9_desc"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="14sp" />
+                        android:textColor="@color/text_muted"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="3dp" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="22dp"
                 android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:padding="16dp"
-                android:background="@drawable/bg_feature_item">
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
                     android:src="@drawable/ic_magic"
-                    android:background="@drawable/bg_icon_green"
-                    android:padding="8dp" />
+                    android:background="@drawable/bg_icon_tile"
+                    android:scaleType="centerInside"
+                    android:padding="14dp"
+                    android:contentDescription="@string/feature_auto_title" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="18dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -113,40 +116,41 @@
                         android:layout_height="wrap_content"
                         android:text="@string/feature_auto_title"
                         android:textColor="@color/text_primary"
-                        android:textSize="16sp"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="3dp"
                         android:text="@string/feature_auto_desc"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="14sp" />
+                        android:textColor="@color/text_muted"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="3dp" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="22dp"
                 android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:padding="16dp"
-                android:background="@drawable/bg_feature_item">
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
                     android:src="@drawable/ic_dictionary"
-                    android:background="@drawable/bg_icon_green"
-                    android:padding="8dp" />
+                    android:background="@drawable/bg_icon_tile"
+                    android:scaleType="centerInside"
+                    android:padding="14dp"
+                    android:contentDescription="@string/feature_live_title" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="18dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -154,40 +158,41 @@
                         android:layout_height="wrap_content"
                         android:text="@string/feature_live_title"
                         android:textColor="@color/text_primary"
-                        android:textSize="16sp"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="3dp"
                         android:text="@string/feature_live_desc"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="14sp" />
+                        android:textColor="@color/text_muted"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="3dp" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="22dp"
                 android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:padding="16dp"
-                android:background="@drawable/bg_feature_item">
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
                     android:src="@drawable/ic_infinity"
-                    android:background="@drawable/bg_icon_green"
-                    android:padding="8dp" />
+                    android:background="@drawable/bg_icon_tile"
+                    android:scaleType="centerInside"
+                    android:padding="14dp"
+                    android:contentDescription="@string/feature_limit_title" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="18dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -195,16 +200,17 @@
                         android:layout_height="wrap_content"
                         android:text="@string/feature_limit_title"
                         android:textColor="@color/text_primary"
-                        android:textSize="16sp"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="3dp"
                         android:text="@string/feature_limit_desc"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="14sp" />
+                        android:textColor="@color/text_muted"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="3dp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -213,12 +219,12 @@
             android:id="@+id/btnGo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="34dp"
             android:text="→"
             android:textColor="@color/accent_lime"
-            android:textSize="48sp"
+            android:textSize="56sp"
             android:textStyle="bold"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:contentDescription="@string/welcome_title" />
     </LinearLayout>
 </ScrollView>
