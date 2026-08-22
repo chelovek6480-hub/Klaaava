@@ -2,7 +2,7 @@ package com.example.keyboard
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class WelcomeActivity : AppCompatActivity() {
@@ -10,7 +10,7 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        findViewById<ImageButton>(R.id.btnGo).setOnClickListener {
+        findViewById<TextView>(R.id.btnGo).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
