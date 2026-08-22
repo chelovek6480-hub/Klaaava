@@ -6,9 +6,14 @@
     <color name="primary_green">#2E7D32</color>
     <color name="primary_green_bright">#22C55E</color>
     <color name="accent_lime">#7CFC5A</color>
+    <color name="accent_green">#4ADE80</color>
     <color name="green_tint">#122417</color>
+    <color name="icon_tile">#142017</color>
+    <color name="logo_fill">#101512</color>
+    <color name="logo_glow">#3322C55E</color>
     <color name="text_primary">#FFFFFF</color>
     <color name="text_secondary">#8E8E93</color>
+    <color name="text_muted">#A1A1A6</color>
     <color name="text_hint">#5E5E62</color>
     <color name="divider">#2C2C35</color>
     <color name="black">#000000</color>
